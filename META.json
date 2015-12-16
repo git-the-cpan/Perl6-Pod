@@ -25,7 +25,7 @@
             "Filter::Simple" : "0",
             "Getopt::Long" : "0",
             "Pod::Usage" : "0",
-            "Regexp::Grammars" : "1.042",
+            "Regexp::Grammars" : "1.044",
             "Test::Class" : "0",
             "Tie::UnionHash" : "0.02",
             "XML::Flow" : "0"
@@ -35,7 +35,7 @@
    "provides" : {
       "Perl6::Pod" : {
          "file" : "lib/Perl6/Pod.pm",
-         "version" : "0.71"
+         "version" : "0.72"
       },
       "Perl6::Pod::Block" : {
          "file" : "lib/Perl6/Pod/Block.pm",
@@ -266,5 +266,5 @@
          "url" : "git://github.com/zag/p5-Perl6-Pod.git"
       }
    },
-   "version" : "0.71"
+   "version" : "0.72"
 }

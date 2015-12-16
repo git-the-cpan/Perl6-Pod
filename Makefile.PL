@@ -3,25 +3,25 @@ use 5.20.0;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'NAME' => 'Perl6::Pod',
-  'VERSION_FROM' => 'lib/Perl6/Pod.pm',
-  'PREREQ_PM' => {
-                   'Filter::Simple' => 0,
-                   'Regexp::Grammars' => '1.042',
-                   'Test::Class' => 0,
-                   'Pod::Usage' => 0,
-                   'Getopt::Long' => 0,
-                   'Encode' => 0,
-                   'XML::Flow' => '0',
-                   'Tie::UnionHash' => '0.02'
-                 },
-  'PL_FILES' => {},
-  'INSTALLDIRS' => 'site',
   'EXE_FILES' => [
                    'scripts/pod6any',
                    'scripts/pod6docbook',
                    'scripts/pod6latex',
                    'scripts/pod6xhtml'
-                 ]
+                 ],
+  'PREREQ_PM' => {
+                   'Tie::UnionHash' => '0.02',
+                   'Getopt::Long' => 0,
+                   'Filter::Simple' => 0,
+                   'Pod::Usage' => 0,
+                   'Test::Class' => 0,
+                   'Regexp::Grammars' => '1.044',
+                   'Encode' => 0,
+                   'XML::Flow' => '0'
+                 },
+  'PL_FILES' => {},
+  'VERSION_FROM' => 'lib/Perl6/Pod.pm',
+  'INSTALLDIRS' => 'site',
+  'NAME' => 'Perl6::Pod'
 )
 ;
